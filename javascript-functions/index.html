@@ -1,0 +1,27 @@
+<html lang="en">
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Assignment 1</title>
+    </head>
+    <body>
+            <script>
+/*Write a JavaScript function named isPrime that accepts a parameter which checks if the given number is
+prime number or not and returns true or false.*/
+              function isPrime(n){
+                  var factors = 0;
+                  for(var i = n-1; i>1; i--){
+                    if(n%i == 0){
+                      factors++;
+                      break;
+                    }
+                  }
+                  return factors==0;
+              }      
+               console.log(isPrime(98)) ; //prints false
+               console.log(isPrime(97)) ; //prints true  
+            </script>
+    </body>
+</html>
